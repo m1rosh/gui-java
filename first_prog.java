@@ -1,6 +1,28 @@
 import java.util.Scanner;
 public class first_prog {
     public static void main(String[] args) {
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Введите два числа (a<b)");
+            double a = scanner.nextDouble();
+            double b = scanner.nextDouble();
+
+        double x = 0;
+        double y = 0;
+        double square = 0;
+        double width = 0;
+        double step = (a - b) / 30;
+        for (int i = 0; i < 31; i++) {
+            x = x + i * step;
+            y = Math.pow(x, 12) * Math.sin(x);
+            square = square + step * y;
+        }
+        System.out.println(square);
+
+
+        }
+    }
+        /*
         Scanner scanner = new Scanner(System.in);
         int res = 0;
         long a = 2147483647;
@@ -29,4 +51,6 @@ public class first_prog {
             }
         }
     }
-}
+
+         */
+
