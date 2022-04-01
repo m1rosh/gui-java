@@ -17,7 +17,7 @@ public class first_prog {
             y = Math.pow(x, 12) * Math.sin(x);
             square = square + step * y;
         }
-        System.out.println(square);
+        System.out.println(square,2);
 
 
         }
